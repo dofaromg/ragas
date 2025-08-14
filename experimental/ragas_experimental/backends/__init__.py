@@ -12,6 +12,7 @@ from .registry import (
 # concrete backends
 from .local_csv import LocalCSVBackend
 from .local_jsonl import LocalJSONLBackend
+from .inmemory import InMemoryBackend
 
 # Optional backends that require additional dependencies
 try:
@@ -28,6 +29,7 @@ __all__ = [
     "BackendRegistry",
     "LocalCSVBackend",
     "LocalJSONLBackend",
+    "InMemoryBackend",
     "get_registry",
     "register_backend",
     "print_available_backends",
